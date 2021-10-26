@@ -7,7 +7,7 @@ var kys4 = document.querySelector('#kys4');
 var kys5 = document.querySelector('#kys5');
 
 function laske(k1,k2,k3,k4,k5){
-    pisteet = 0;
+    var pisteet = 0;
     if(k1 == '5.15'){
         pisteet = pisteet + 1;
         document.getElementById("kys1").style.backgroundColor = "green";
@@ -49,4 +49,4 @@ function tuloste(){
     let k5 = kys5.value;
     pisteTuloste.textContent = laske(k1,k2,k3,k4,k5);
 }
-lahetaButton.addEventListener('click', tuloste)
+lahetaButton.addEventListener('click', tuloste);
